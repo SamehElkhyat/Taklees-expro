@@ -152,7 +152,7 @@ const ActiveEmail = () => {
                     animate={{ opacity: 1, y: 0, transition: { delay: 0.8, duration: 0.5 } }}
                     className="flex justify-center space-x-3 rtl:space-x-reverse"
                   >
-                    {[0, 1, 2, 3, 4].map((index) => (
+                    {[0, 1, 2, 3, 4, 5].map((index) => (
                       <motion.input
                         key={index}
                         type="text"
@@ -167,7 +167,7 @@ const ActiveEmail = () => {
                             formik.setFieldValue('Code', updatedCode.join(''));
                             
                             // Auto-focus next input
-                            if (newValue && index < 4) {
+                            if (newValue && index < 5) {
                               const nextInput = document.querySelector(`input[name="Code"][data-index="${index + 1}"]`);
                               if (nextInput) nextInput.focus();
                             }
@@ -182,7 +182,7 @@ const ActiveEmail = () => {
                             formik.setFieldValue('Code', pastedData);
                             
                             // Focus the last filled input or the next empty one
-                            const lastIndex = Math.min(pastedData.length - 1, 4);
+                            const lastIndex = Math.min(pastedData.length - 1, 5);
                             setTimeout(() => {
                               const targetInput = document.querySelector(`input[name="Code"][data-index="${lastIndex}"]`);
                               if (targetInput) targetInput.focus();
