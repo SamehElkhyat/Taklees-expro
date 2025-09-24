@@ -30,7 +30,7 @@
     }
   ],
   "functions": {
-    "app/api/**/*.js": {
+    "app/api/**/*.jsx": {
       "maxDuration": 30
     }
   }
