@@ -1,0 +1,20 @@
+/* Reusable table cell styles */
+.table-cell-base {
+  @apply px-2 sm:px-3 py-2 sm:py-3;
+}
+.table-cell-responsive-text {
+  @apply text-xs sm:text-sm lg:text-base;
+}
+.table-cell-full {
+  @apply px-2 sm:px-3 py-2 sm:py-3 text-xs sm:text-sm lg:text-base;
+}
+
+.table-header-cell {
+  @apply px-2 sm:px-3 py-2 sm:py-3 text-xs sm:text-sm lg:text-base;
+}
+.table-data-cell {
+  @apply px-2 sm:px-3 py-2 sm:py-3 text-xs sm:text-sm lg:text-base;
+}
+.table-action-cell {
+  @apply px-2 sm:px-3 py-2 sm:py-3;
+} 

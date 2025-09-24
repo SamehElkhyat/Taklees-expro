@@ -1,0 +1,96 @@
+/* Service Cards Styling */
+.service-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.text-content {
+  padding: 24px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 12px;
+  line-height: 1.3;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-container {
+    height: 220px;
+  }
+  
+  .card-title {
+    font-size: 1.3rem;
+  }
+  
+  .card-description {
+    font-size: 0.9rem;
+  }
+  
+  .text-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    height: 200px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+  }
+  
+  .text-content {
+    padding: 16px;
+  }
+}

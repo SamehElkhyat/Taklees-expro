@@ -1,0 +1,108 @@
+.Content-Total-Clients {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+<<<<<<< HEAD:src/pages/dashboard/admin/Brookers/Brookers.css
+
+.Brookers-Background {
+  background-color: #F3F2F7;
+  width: 100%;
+  position: relative;
+  image-resolution: from-image 300dpi;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  object-fit: cover;
+=======
+.Brookers-Background{
+    background-color: #F3F2F7;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    image-resolution: from-image 300dpi;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    object-fit: cover;
+>>>>>>> 5ebc70fb193df9665b398b267a48f238561ad77c:src/Component/MangerComponennt/BrookersManger/Brookers.css
+}
+
+.Total-Offers-Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  background-color: FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.Total-Money {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  background-color: FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.Total-Cancled-Order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  background-color: FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.Content-Total-Clients img {
+  padding: 20px;
+  width: 50%;
+  padding-right: 0;
+  height: 100%;
+}
+
+.Total-Offers-Content img {
+  padding: 20px;
+  width: 50%;
+  padding-right: 0;
+  height: 100%;
+}
+
+.Total-Money img {
+  padding: 20px;
+  width: 50%;
+  padding-right: 0;
+  height: 100%;
+}
+
+.Total-Cancled-Order img {
+  padding: 20px;
+  width: 50%;
+  padding-right: 0;
+  height: 100%;
+}
+
+/* Client-Design*/
+.Content-Clients {
+  height: 20vh;
+  padding: 30px;
+  width: 70%;
+  background-color: FFFFFF;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.item-clients {
+  margin: 40px;
+}
+
+.row hr {
+
+  width: 1px;
+}

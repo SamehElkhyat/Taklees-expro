@@ -1,0 +1,224 @@
+.info {
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+.Col1:hover .info {
+    opacity: 1;
+    transform: scale(1.05);
+}
+.Col2:hover .info {
+    opacity: 1;
+    transform: scale(1.05);
+}
+.Col3:hover .info {
+    opacity: 1;
+    transform: scale(1.05);
+}
+.Col4:hover .info {
+    opacity: 1;
+    transform: scale(1.05);
+}
+.Col5:hover .info {
+    opacity: 1;
+    transform: scale(1.05);
+}
+.Col6:hover .info {
+    opacity: 1;
+    transform: scale(1.05);
+}
+.Col7:hover .info {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/*// //*/
+
+.Col1 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.Col1:hover {
+    transform: scale(1.05);
+}
+.Col1 .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 80, 144, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.Col1:hover .content {
+    opacity: 1;
+}
+/*// //*/
+.Col2 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.Col2:hover {
+    transform: scale(1.05);
+}
+.Col2 .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 80, 144, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.Col2:hover .content {
+    opacity: 1;
+}
+/*// //*/
+.Col3 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.Col3:hover {
+    transform: scale(1.05);
+}
+.Col3 .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 80, 144, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.Col3:hover .content {
+    opacity: 1;
+}
+/*// //*/
+.Col4 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.Col4:hover {
+    transform: scale(1.05);
+}
+.Col4 .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 80, 144, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.Col4:hover .content {
+    opacity: 1;
+}
+/*// //*/
+.Col5 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.Col5:hover {
+    transform: scale(1.05);
+}
+.Col5 .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 80, 144, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.Col5:hover .content {
+    opacity: 1;
+}
+/*// //*/
+.Col6 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.Col6:hover {
+    transform: scale(1.05);
+}
+.Col6 .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 80, 144, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.Col6:hover .content {
+    opacity: 1;
+}
+/* */
+.Col7 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.Col7:hover {
+    transform: scale(1.05);
+}
+.Col7 .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 80, 144, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.Col7:hover .content {
+    opacity: 1;
+}

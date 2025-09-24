@@ -1,0 +1,297 @@
+/* Modern Footer Styling */
+.modern-footer {
+  width: 100%;
+  background: #ffffff;
+}
+
+/* Consultation Section */
+.consultation-section {
+  background: #f8fafc;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.consultation-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.consultation-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 24px;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.consultation-description {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 16px;
+  font-family: 'Tajawal', sans-serif;
+  line-height: 1.6;
+}
+
+.consultation-subdescription {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 40px;
+  font-family: 'Tajawal', sans-serif;
+  line-height: 1.6;
+}
+
+/* Email Form */
+.email-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.email-input-container {
+  display: flex;
+  background: white;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.email-input {
+  flex: 1;
+  padding: 16px 24px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: 'Tajawal', sans-serif;
+  background: transparent;
+  color: #374151;
+}
+
+.email-input::placeholder {
+  color: #9ca3af;
+  text-align: right;
+}
+
+.send-button {
+  padding: 16px 32px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Tajawal', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.send-button:hover {
+  background: #1e40af;
+}
+
+/* Main Footer */
+.main-footer {
+  background: #f8fafc;
+  padding: 40px 20px 0;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+/* Footer Logo */
+.footer-logo-section {
+  flex: 1;
+}
+
+.footer-logo {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Footer Navigation */
+.footer-nav {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-link {
+  color: #374151;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: 'Tajawal', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1e3a8a;
+}
+
+/* Social Media */
+.social-media {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link.facebook {
+  background: #1877f2;
+}
+
+.social-link.twitter {
+  background: #1da1f2;
+}
+
+.social-link.linkedin {
+  background: #0077b5;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid #e5e7eb;
+  padding: 24px 0;
+}
+
+.footer-bottom-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.separator {
+  color: #d1d5db;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .consultation-title {
+    font-size: 2.5rem;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .footer-nav {
+    gap: 30px;
+  }
+  
+  .social-media {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .consultation-section {
+    padding: 60px 15px;
+  }
+  
+  .consultation-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .consultation-description,
+  .consultation-subdescription {
+    font-size: 1rem;
+  }
+  
+  .email-input-container {
+    flex-direction: column;
+    border-radius: 12px;
+  }
+  
+  .email-input {
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .send-button {
+    border-radius: 0;
+  }
+  
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+  }
+  
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .consultation-title {
+    font-size: 1.9rem;
+  }
+  
+  .consultation-description,
+  .consultation-subdescription {
+    font-size: 0.95rem;
+  }
+  
+  .footer-container {
+    gap: 25px;
+  }
+  
+  .footer-nav {
+    gap: 15px;
+  }
+  
+  .nav-link {
+    font-size: 0.95rem;
+  }
+  
+  .social-link {
+    width: 40px;
+    height: 40px;
+  }
+}

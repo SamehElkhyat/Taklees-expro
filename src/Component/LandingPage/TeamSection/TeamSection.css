@@ -1,0 +1,30 @@
+.Team-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #E9FAFE;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Team-section-right {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 50%;
+}
+
+.Team-section-left {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  text-align: center;
+}
+
+.Team-section-left img {
+  scale: .8;
+  width: 100%;
+  image-resolution: from-image 300dpi;
+  height: 80%;
+
+}

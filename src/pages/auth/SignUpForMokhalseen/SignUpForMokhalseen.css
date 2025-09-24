@@ -1,0 +1,198 @@
+.SignUpCompany-background-img-frame {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: var(--DrawerList);
+}
+
+.SignUpCompany-Background {
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  image-resolution: from-image 300dpi;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.dad-SignUpCompany-Frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: var(--DrawerList);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SignUpCompany-Frame {
+  position: absolute;
+  width: 70%;
+  height: 95%;
+  background-color: #ffffff4b;
+  border-radius: 50px;
+}
+/*/sssssssssssssssssssssssssssssssssss/*/
+.sign-Up-ForCompany-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: var(--DrawerList);
+}
+
+.SignUpCompany-form-group1 {
+
+  width: 80%;
+ padding: 30px;
+ display: flex;
+ justify-content: end;
+ flex-direction: column;
+ align-items: end;
+}
+.SignUpCompany-form-group2 {
+  width: 50%;
+
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ }
+
+.Big-Form{
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+
+}
+
+/*ddddddddddddddddddddddddddddddddddddd//*/
+.sign-Up-ForCompany-container h2{
+    color: #020346 !important;
+    font-weight: 900 !important;
+    font-size: 50px;
+}
+
+
+
+
+.SignUpCompany-form-group1 {
+  padding-bottom: 30px;
+  margin-bottom: 1.5rem;
+}
+.SignUpCompany-form-group2 {
+  margin-bottom: 1.5rem;
+}
+
+.SignUpCompany-form-group1 input {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  direction: rtl;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  
+}
+.SignUpCompany-form-group2 input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  direction: rtl;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.SignUpCompany-form-group1 input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+.SignUpCompany-form-group2 input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+/*Buttons*^*^*^*^**^*******Buttons**************/
+.signupForCompany-button-group{
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column !important ;
+  }
+
+  .signupForCompany-button-group p{
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row !important ;
+    }
+
+.register-button-ForComponent:hover {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+}
+
+.register-button-ForComponent:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(37, 99, 235, 0.2);
+}
+
+.register-button-ForComponent:disabled {
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.register-button-ForComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 70%;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: #000000;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+}
+
+/*Forget Password********************/
+.forgot-password {
+  margin-top: 1rem;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.forgot-password a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+
