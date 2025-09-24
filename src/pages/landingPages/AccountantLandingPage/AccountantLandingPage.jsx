@@ -18,7 +18,7 @@ const AccountantLandingPage = () => {
       // Check if the result is a promise (Redux Toolkit thunk)
       if (result && typeof result.then === "function") {
         const { payload } = result;
-        setuserProfile(payload);
+        setuserProfile(result.payload);
       } else {
         // For regular Redux actions
         setuserProfile(result.payload);
