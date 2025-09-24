@@ -16,10 +16,8 @@ const router = createBrowserRouter([
     path: "",
     element: <Layout />,
     children: [
-      // Main landing page
       { path: "", element: <LandingPage /> },
       
-      // All route groups
       ...authRoutes,
       ...dashboardRoutes,
       ...orderRoutes,
