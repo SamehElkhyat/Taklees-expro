@@ -198,6 +198,7 @@ const ActiveEmail = () => {
                               // Clear the previous input
                               const currentCode = formik.values.Code || '';
                               const updatedCode = currentCode.split('');
+                              
                               updatedCode[index - 1] = '';
                               formik.setFieldValue('Code', updatedCode.join(''));
                             }
