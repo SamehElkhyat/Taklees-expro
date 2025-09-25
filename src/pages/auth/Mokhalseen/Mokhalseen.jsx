@@ -17,6 +17,7 @@ const Mokhalseen = () => {
           className="Intro-Signin-Background"
           src={SignInBackground}
           alt=""
+          loading="lazy"
         />
         <div className="dad-Intro-SignIn-Frame w-100 h-100">
           <div className="Intro-SignIn-Frame"></div>

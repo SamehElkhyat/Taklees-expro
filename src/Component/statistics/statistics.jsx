@@ -13,7 +13,7 @@ export default function statistics() {
           <div className="card h-100 border-0 shadow-sm">
             <div className="card-body text-center">
               <div className="display-4 text-primary mb-2">
-                <i className="fas fa-users"></i>
+                <i className="fas fa-users" loading="lazy"></i>
               </div>
               <h5 className="card-title">إجمالي العملاء</h5>
               <h3 className="text-primary">1,234</h3>
@@ -27,7 +27,7 @@ export default function statistics() {
           <div className="card h-100 border-0 shadow-sm">
             <div className="card-body text-center">
               <div className="display-4 text-success mb-2">
-                <i className="fas fa-clipboard-list"></i>
+                <i className="fas fa-clipboard-list" loading="lazy"></i>
               </div>
               <h5 className="card-title">الطلبات النشطة</h5>
               <h3 className="text-success">156</h3>
@@ -41,7 +41,7 @@ export default function statistics() {
           <div className="card h-100 border-0 shadow-sm">
             <div className="card-body text-center">
               <div className="display-4 text-info mb-2">
-                <i className="fas fa-check-circle"></i>
+                <i className="fas fa-check-circle" loading="lazy"></i>
               </div>
               <h5 className="card-title">الطلبات المكتملة</h5>
               <h3 className="text-info">3,789</h3>
@@ -55,7 +55,7 @@ export default function statistics() {
           <div className="card h-100 border-0 shadow-sm">
             <div className="card-body text-center">
               <div className="display-4 text-warning mb-2">
-                <i className="fas fa-dollar-sign"></i>
+                <i className="fas fa-dollar-sign" loading="lazy"></i>
               </div>
               <h5 className="card-title">الإيرادات</h5>
               <h3 className="text-warning">45,678</h3>
@@ -111,22 +111,22 @@ export default function statistics() {
                       <td>أحمد محمد</td>
                       <td>45</td>
                       <td>
-                        <i className="fas fa-star text-warning"></i>
-                        <i className="fas fa-star text-warning"></i>
-                        <i className="fas fa-star text-warning"></i>
-                        <i className="fas fa-star text-warning"></i>
-                        <i className="fas fa-star-half-alt text-warning"></i>
+                        <i className="fas fa-star text-warning" loading="lazy"></i>
+                        <i className="fas fa-star text-warning" loading="lazy"></i>
+                        <i className="fas fa-star text-warning" loading="lazy"></i>
+                        <i className="fas fa-star text-warning" loading="lazy"></i>
+                        <i className="fas fa-star-half-alt text-warning" loading="lazy"></i>
                       </td>
                     </tr>
                     <tr>
                       <td>سارة أحمد</td>
                       <td>38</td>
                       <td>
-                        <i className="fas fa-star text-warning"></i>
-                        <i className="fas fa-star text-warning"></i>
-                        <i className="fas fa-star text-warning"></i>
-                        <i className="fas fa-star text-warning"></i>
-                        <i className="far fa-star text-warning"></i>
+                        <i className="fas fa-star text-warning" loading="lazy"></i>
+                        <i className="fas fa-star text-warning" loading="lazy"></i>
+                        <i className="fas fa-star text-warning" loading="lazy"></i>
+                        <i className="fas fa-star text-warning" loading="lazy"></i>
+                        <i className="far fa-star text-warning" loading="lazy"></i>
                       </td>
                     </tr>
                   </tbody>

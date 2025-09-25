@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="footer-container">
           {/* Logo Section */}
           <div className="footer-logo-section">
-            <img src={logo} alt="تخليص اكسبرو" className="footer-logo" />
+            <img src={logo} alt="تخليص اكسبرو" className="footer-logo" loading="lazy" />
           </div>
 
           {/* Navigation Links */}

@@ -117,7 +117,7 @@ export default function StatisticsManger() {
             <div className="card h-100 border-0 shadow-sm">
               <div className="card-body text-center">
                 <div className="display-4 text-primary mb-2">
-                  <i className="fas fa-users"></i>
+                  <i className="fas fa-users" loading="lazy"></i>
                 </div>
                 <h5 className="card-title">إجمالي العملاء</h5>
                 <h3 className="text-primary">{Statics.countAllUsers}</h3>
@@ -131,7 +131,7 @@ export default function StatisticsManger() {
             <div className="card h-100 border-0 shadow-sm">
               <div className="card-body text-center">
                 <div className="display-4 text-success mb-2">
-                  <i className="fas fa-clipboard-list"></i>
+                  <i className="fas fa-clipboard-list" loading="lazy"></i>
                 </div>
                 <h5 className="card-title">الطلبات النشطة</h5>
                 <h3 className="text-success">{Statics.countActiveOrders}</h3>
@@ -145,7 +145,7 @@ export default function StatisticsManger() {
             <div className="card h-100 border-0 shadow-sm">
               <div className="card-body text-center">
                 <div className="display-4 text-info mb-2">
-                  <i className="fas fa-check-circle"></i>
+                  <i className="fas fa-check-circle" loading="lazy"></i>
                 </div>
                 <h5 className="card-title">الطلبات المكتملة</h5>
                 <h3 className="text-info">{Statics.countDoneOrders}</h3>
@@ -159,7 +159,7 @@ export default function StatisticsManger() {
             <div className="card h-100 border-0 shadow-sm">
               <div className="card-body text-center">
                 <div className="display-4 text-warning mb-2">
-                  <i className="fas fa-dollar-sign"></i>
+                  <i className="fas fa-dollar-sign" loading="lazy"></i>
                 </div>
                 <h5 className="card-title">الإيرادات</h5>
                 <h3 className="text-warning">{Statics.exports}</h3>
@@ -290,7 +290,7 @@ export default function StatisticsManger() {
 
                               {item.count > 0 && item.count <= 5 && (
                                 <>
-                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
                                   <i className="far fa-star"></i>
                                   <i className="far fa-star"></i>
                                   <i className="far fa-star"></i>
@@ -300,8 +300,8 @@ export default function StatisticsManger() {
 
                               {item.count > 5 && item.count <= 25 && (
                                 <>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
                                   <i className="far fa-star"></i>
                                   <i className="far fa-star"></i>
                                   <i className="far fa-star"></i>
@@ -310,9 +310,9 @@ export default function StatisticsManger() {
 
                               {item.count > 25 && item.count <= 50 && (
                                 <>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
                                   <i className="far fa-star"></i>
                                   <i className="far fa-star"></i>
                                 </>
@@ -320,21 +320,21 @@ export default function StatisticsManger() {
 
                               {item.count > 50 && item.count <= 100 && (
                                 <>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
                                   <i className="far fa-star"></i>
                                 </>
                               )}
 
                               {item.count > 100 && (
                                 <>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
-                                  <i className="fas fa-star"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
+                                  <i className="fas fa-star" loading="lazy"></i>
                                 </>
                               )}
                             </span>

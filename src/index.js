@@ -9,27 +9,59 @@ import { store } from "./store/Store/Store.js";
 import { Provider } from "react-redux";
 import { RouterProvider } from "react-router-dom";
 import router from "./router";
-import ChunkErrorBoundary from "./Component/ErrorBoundary/ChunkErrorBoundary";
-import "./utils/chunkErrorHandler";
 
-// Enhanced Loading component
+// Loading component
 const LoadingSpinner = () => (
-  <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
-    <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
-      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mb-4"></div>
-      <p className="text-gray-600 font-medium">جاري تحميل التطبيق...</p>
+  <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+    <div className="spinner-border text-primary" role="status">
+      <span className="visually-hidden">Loading...</span>
     </div>
   </div>
-)
+);
+
+// Error Boundary Component
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true, error };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error('Error caught by boundary:', error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="d-flex flex-column justify-content-center align-items-center" style={{ height: '100vh' }}>
+          <h2 className="text-danger mb-3">Something went wrong</h2>
+          <p className="text-muted mb-3">Please refresh the page or try again later.</p>
+          <button 
+            className="btn btn-primary" 
+            onClick={() => window.location.reload()}
+          >
+            Refresh Page
+          </button>
+        </div>
+      );
+    }
+
+    return this.props.children;
+  }
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <Provider store={store}>
-    <ChunkErrorBoundary>
+    <ErrorBoundary>
       <Suspense fallback={<LoadingSpinner />}>
         <RouterProvider router={router} />
       </Suspense>
-    </ChunkErrorBoundary>
+    </ErrorBoundary>
   </Provider>
 );

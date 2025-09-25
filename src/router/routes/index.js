@@ -7,6 +7,7 @@ export { orderRoutes } from './orders';
 export { certificateRoutes } from './certificates';
 export { serviceRoutes } from './services';
 export { featureRoutes } from './features';
+export { navbarRoutes } from './navbar';
 
 // Export all routes as a single object
 export const allRoutes = {
@@ -16,6 +17,7 @@ export const allRoutes = {
   certificates: certificateRoutes,
   services: serviceRoutes,
   features: featureRoutes,
+  navbar: navbarRoutes,
 };
 
 // Export all routes as a flat array
@@ -26,6 +28,7 @@ export const allRoutesFlat = [
   ...certificateRoutes,
   ...serviceRoutes,
   ...featureRoutes,
+  ...navbarRoutes,
 ];
 
 // Export route counts for debugging/analytics
@@ -36,6 +39,7 @@ export const routeCounts = {
   certificates: certificateRoutes.length,
   services: serviceRoutes.length,
   features: featureRoutes.length,
+  navbar: navbarRoutes.length,
   total: authRoutes.length + dashboardRoutes.length + orderRoutes.length + 
-         certificateRoutes.length + serviceRoutes.length + featureRoutes.length,
+         certificateRoutes.length + serviceRoutes.length + featureRoutes.length + navbarRoutes.length,
 };

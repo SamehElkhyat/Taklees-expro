@@ -118,6 +118,7 @@ export default function DetailsForCertification({selectedCert, handleCloseModal,
                             src={selectedCert.productImage} 
                             alt="صورة المنتج"
                             className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
                             onError={(e) => {
                               e.target.style.display = 'none';
                               e.target.nextSibling.style.display = 'flex';
@@ -142,6 +143,7 @@ export default function DetailsForCertification({selectedCert, handleCloseModal,
                             src={selectedCert.crImage} 
                             alt="صورة الشهادة"
                             className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
                             onError={(e) => {
                               e.target.style.display = 'none';
                               e.target.nextSibling.style.display = 'flex';

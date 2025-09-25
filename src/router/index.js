@@ -10,20 +10,24 @@ import { orderRoutes } from "./routes/orders";
 import { certificateRoutes } from "./routes/certificates";
 import { serviceRoutes } from "./routes/services";
 import { featureRoutes } from "./routes/features";
+import { navbarRoutes } from "./routes/navbar";
 
 const router = createBrowserRouter([
   {
     path: "",
     element: <Layout />,
     children: [
+      // Main landing page
       { path: "", element: <LandingPage /> },
       
+      // All route groups
       ...authRoutes,
       ...dashboardRoutes,
       ...orderRoutes,
       ...certificateRoutes,
       ...serviceRoutes,
       ...featureRoutes,
+      ...navbarRoutes,
     ],
   },
   {

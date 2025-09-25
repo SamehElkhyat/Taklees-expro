@@ -112,6 +112,7 @@ const CustomerTestimonials = () => {
                     src={testimonial.image} 
                     alt={testimonial.name}
                     className="customer-avatar"
+                    loading="lazy"
                   />
                   <h4 className="customer-name">{testimonial.name}</h4>
                 </div>

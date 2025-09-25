@@ -8,9 +8,12 @@ import { useNavigate } from "react-router-dom";
 import LocomotiveScroll from "locomotive-scroll";
 import NearAboutTakhlees from "../../../Component/LandingPage/NearAboutTakhlees/NearAboutTakhlees.jsx";
 import ProductCenter from "../../../Component/LandingPage/ProductCenter/ProductCenter.jsx";
+import StatisticsSection from "../../../Component/LandingPage/StatisticsSection/StatisticsSection.jsx";
 import CustomsApproval from "../../../Component/LandingPage/CustomsApproval/CustomsApproval.jsx";
 import AboutUs from "../../../Component/LandingPage/AboutUs/AboutUs.jsx";
 import CustomerTestimonials from "../../../Component/LandingPage/CustomerTestimonials/CustomerTestimonials.jsx";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const LandingPage = () => {
   const scrollRef = useRef(null);
@@ -39,10 +42,12 @@ const LandingPage = () => {
       >
         <header className="new-landing-header">
           <div className="diamond-pattern-bg">
-            <img
+            <LazyLoadImage
               src={diamondPattern}
               alt="Diamond Pattern Background"
               className="background-image"
+              effect="opacity"
+              threshold={150}
             />
             <div className="overlay"></div>
             <div className="header-content">
@@ -92,6 +97,7 @@ const LandingPage = () => {
             </div>
           </div>
         </header>
+        <StatisticsSection />
 
         {/* باقي الأقسام */}
         <MainSection />

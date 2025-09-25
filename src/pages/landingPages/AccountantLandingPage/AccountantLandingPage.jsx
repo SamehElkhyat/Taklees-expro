@@ -15,10 +15,12 @@ const AccountantLandingPage = () => {
   const navigationToLandingpage = async () => {
     try {
       const result = dispatch(GetDataApi());
+      // Check if the result is a promise (Redux Toolkit thunk)
       if (result && typeof result.then === "function") {
         const { payload } = result;
-        setuserProfile(result.payload);
+        setuserProfile(payload);
       } else {
+        // For regular Redux actions
         setuserProfile(result.payload);
       }
     } catch (error) {

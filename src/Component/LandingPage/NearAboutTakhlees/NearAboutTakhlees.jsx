@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import globalLogisticsMap from "../../../assets/images/global-logistics-map.png";
 import "./NearAboutTakhlees.css";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const NearAboutTakhlees = () => {
   return (
@@ -39,10 +40,12 @@ const NearAboutTakhlees = () => {
           viewport={{ once: true }}
         >
           <div className="world-map-container">
-            <img 
+            <LazyLoadImage 
               src={globalLogisticsMap} 
               alt="Global Logistics Network"
               className="logistics-map-image"
+              effect="opacity"
+              threshold={150}
             />
           </div>
         </motion.div>

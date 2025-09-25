@@ -67,6 +67,7 @@ const AboutUs = () => {
               src={meetImage} 
               alt="Team Meeting - Takhlees Expro"
               className="team-image"
+              loading="lazy"
             />
           </div>
         </motion.div>

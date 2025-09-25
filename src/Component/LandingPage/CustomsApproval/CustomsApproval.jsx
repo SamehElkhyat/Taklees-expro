@@ -21,6 +21,7 @@ const CustomsApproval = () => {
               src={approvedImage} 
               alt="Customs Approval System"
               className="approved-image"
+              loading="lazy"
             />
           </div>
         </motion.div>

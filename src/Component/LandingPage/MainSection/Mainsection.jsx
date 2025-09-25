@@ -1,9 +1,9 @@
 import React from "react";
 import "./Mainsection.css";
 import card1 from "../../../assets/images/card1.png";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import card2 from "../../../assets/images/card2.png";
 import card3 from "../../../assets/images/card3.png";
-
 import { motion } from "framer-motion";
 
 // بيانات الكروت
@@ -69,10 +69,12 @@ const MainSection = () => {
         >
           <div className="card-content">
             <div className="image-container">
-              <img 
+              <LazyLoadImage
                 src={card.image} 
                 alt={card.title}
                 className="card-image"
+                effect="opacity"
+                threshold={150}
               />
             </div>
             <div className="text-content">

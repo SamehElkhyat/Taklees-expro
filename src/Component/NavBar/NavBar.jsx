@@ -173,7 +173,7 @@ const NavBar = () => {
             <div className="navbar-content">
               {/* Right: Logo */}
               <Link to="/" className="navbar-logo-link">
-                <img src={Logo} alt="تخليص إكسبرو" className="navbar-logo-img" />
+                <img src={Logo} alt="تخليص إكسبرو" className="navbar-logo-img" loading="lazy" />
               
               </Link>
 
@@ -249,12 +249,13 @@ const NavBar = () => {
                               : "fa-solid fa-chevron-down"
                           }`}
                           aria-hidden="true"
+                          loading="lazy"
                         ></i>
                       </button>
 
                       <Link to={userLink} className="user-profile-link">
                         {userProfile?.fullName}
-                        <i className="fa-solid fa-toolbox user-profile-icon"></i>
+                        <i className="fa-solid fa-toolbox user-profile-icon" loading="lazy"></i>
                       </Link>
 
                       <div className="notification-icon">

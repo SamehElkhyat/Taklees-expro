@@ -458,61 +458,61 @@ export default function OrderDetailsForUser() {
                               <span className="text-warning">
                                 {item.count === 0 && (
                                   <>
-                                    <i className="far fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                    <i className="far fa-star"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
                                   </>
                                 )}
 
                                 {item.count > 0 && item.count <= 5 && (
                                   <>
-                                    <i className="fas fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                    <i className="far fa-star"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
                                   </>
                                 )}
 
                                 {item.count > 5 && item.count <= 25 && (
                                   <>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                    <i className="far fa-star"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
                                   </>
                                 )}
 
                                 {item.count > 25 && item.count <= 50 && (
                                   <>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                    <i className="far fa-star"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
                                   </>
                                 )}
 
                                 {item.count > 50 && item.count <= 100 && (
                                   <>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="far fa-star"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="far fa-star" loading="lazy"></i>
                                   </>
                                 )}
 
                                 {item.count > 100 && (
                                   <>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
+                                    <i className="fas fa-star" loading="lazy"></i>
                                   </>
                                 )}
                               </span>

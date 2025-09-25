@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import productCenterImage from "../../../assets/images/ProductCenter.png";
 import "./ProductCenter.css";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ProductCenter = () => {
   return (
@@ -42,10 +43,12 @@ const ProductCenter = () => {
           viewport={{ once: true }}
         >
           <div className="warehouse-container">
-            <img 
+            <LazyLoadImage 
               src={productCenterImage} 
               alt="Warehouse Storage Center"
               className="warehouse-image"
+              effect="opacity"
+              threshold={150}
             />
           </div>
         </motion.div>
